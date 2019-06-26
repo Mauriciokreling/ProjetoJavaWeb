@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:h="http://java.sun.com/jsf/html"
+xmlns:f="http://java.sun.com/jsf/core"
+xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Cadastro Cliente</title>
+</head>
+<h:body>
+
+ 	<ui:include src="menu.xhtml" />
+
+<div class="container">
+ 
+	<h:form>	
+		<h:panelGrid columns="2">
+			<h:outputLabel value="Nome: "/>
+			<h:inputText id="nome" value="#{clienteController.cliente.nome}" required="true" requiredMessage="O Nome é obrigatório" />
+			
+			<h:outputLabel value="CPF: " rendered="#{!clienteController.editaCliente}"/>
+			<h:inputText id="cpf" value="#{clienteController.cliente.cpf}" rendered="#{!clienteController.editaCliente}" 
+			required="true" requiredMessage="O CPF é obrigatório"/>
+			
+			<h:outputLabel value="RG: " rendered="#{!clienteController.editaCliente}" />
+			<h:inputText id="rg" value="#{clienteController.cliente.rg}" rendered="#{!clienteController.editaCliente}" 
+			required="true" requiredMessage="O RG é obrigatório"/>
+			
+			<h:outputLabel value="Login: "/>
+			<h:inputText id="login" value="#{clienteController.cliente.login}" required="true" requiredMessage="O Login é obrigatório"/>
+			
+			<h:outputLabel value="Senha: "/>
+			<h:inputSecret id="senha" value="#{clienteController.cliente.senha}" required="true" requiredMessage="A Senha é obrigatório"/>
+			
+			<h:commandButton value="Salvar" action="#{clienteController.salvarCliente}"></h:commandButton>
+		</h:panelGrid>		
+	</h:form>
+	
+</div>
+</h:body>
+</html>
