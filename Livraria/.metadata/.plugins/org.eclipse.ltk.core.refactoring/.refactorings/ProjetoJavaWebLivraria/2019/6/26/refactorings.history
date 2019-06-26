@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 5 elements to &apos;JavaWebLivraria/src&apos;&#x0D;&#x0A;- Original project: &apos;ProjetoJavaWebLivraria&apos;&#x0D;&#x0A;- Destination element: &apos;JavaWebLivraria/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     controller&#x0D;&#x0A;     DAOImpl&#x0D;&#x0A;     DAO&#x0D;&#x0A;     bean&#x0D;&#x0A;     META-INF&#x0D;&#x0A;- Update references to refactored element" description="Move folders" destination="=JavaWebLivraria/src" element1="Livraria/src/controller" element2="Livraria/src/DAOImpl" element3="Livraria/src/DAO" element4="Livraria/src/bean" element5="Livraria/src/META-INF" files="0" flags="589830" folders="5" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1561417809613" units="0" version="1.0"/>
+</session>

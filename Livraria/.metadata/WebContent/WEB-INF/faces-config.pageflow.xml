@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf15596517662340" configfile="/Livraria/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" x="122" y="178" id="pf15604342483430" referenceLink="//@navigationRule.0/@fromViewId|"/>
+  <nodes xsi:type="pageflow:PFPage" name="Login.xhtml" id="pf15608640269710" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf15608640269711 pf15608640269712" path="/Login.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="faces/index.xhtml" id="pf15608640269713" referenceLink="//@navigationRule.5/@navigationCase.0/@toViewId|" inlinks="pf15608640269711 pf15608640269714 pf15608640269715 pf15608640269716 pf15608640269717 pf15608640269718" path="/faces/index.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="faces/Login.xhtml" id="pf15608640269719" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf15608640269712" path="/faces/Login.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="GerenciaCliente.xhtml" id="pf156086402697110" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf15608640269714" path="/GerenciaCliente.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="GerenciaLivro.xhtml" id="pf156086402697111" referenceLink="//@navigationRule.2/@fromViewId|" outlinks="pf15608640269715" path="/GerenciaLivro.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="CadastroCliente.xhtml" id="pf156086402697112" referenceLink="//@navigationRule.3/@fromViewId|" outlinks="pf15608640269716" path="/CadastroCliente.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="CadastroLivro.xhtml" id="pf156086402697113" referenceLink="//@navigationRule.4/@fromViewId|" outlinks="pf15608640269717" path="/CadastroLivro.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" id="pf156086402697114" referenceLink="//@navigationRule.5/@fromViewId|" outlinks="pf15608640269718" path="/index.xhtml"/>
+  <links id="pf15608640269711" target="pf15608640269713" source="pf15608640269710" outcome="index" fromaction="#{clienteControllerBean.login}"/>
+  <links id="pf15608640269712" target="pf15608640269719" source="pf15608640269710" outcome="erro" fromaction="#{clienteControllerBean.login}"/>
+  <links id="pf15608640269714" target="pf15608640269713" source="pf156086402697110" outcome="index" fromaction="#{clienteControllerBean.logout}"/>
+  <links id="pf15608640269715" target="pf15608640269713" source="pf156086402697111" outcome="index" fromaction="#{clienteControllerBean.logout}"/>
+  <links id="pf15608640269716" target="pf15608640269713" source="pf156086402697112" outcome="index" fromaction="#{clienteControllerBean.logout}"/>
+  <links id="pf15608640269717" target="pf15608640269713" source="pf156086402697113" outcome="index" fromaction="#{clienteControllerBean.logout}"/>
+  <links id="pf15608640269718" target="pf15608640269713" source="pf156086402697114" outcome="index" fromaction="#{clienteControllerBean.logout}"/>
+</pageflow:Pageflow>
